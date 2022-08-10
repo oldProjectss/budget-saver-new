@@ -1,0 +1,17 @@
+<div class="home-page">
+  <div class="navbar">
+      <%= link_to "🢀", :back, class: 'back-link'%>
+      <p class='nav-text'>CATEGORY</p>
+      <div><%= button_to "Sign out", destroy_user_session_path, method: :delete, class: 'user-btn' %></div>
+  </div>
+  <div class="categories">
+    <% @groups.each do |group| %>
+    <div class="category">
+      <%= render group %>
+    </div>
+    <% end %>
+  </div>
+  <div class="add-btn-container">
+  <%= button_to "Add a new category", new_group_path, class: 'add-btn', method: :get %>
+  </div>
+</div>

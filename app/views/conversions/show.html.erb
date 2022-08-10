@@ -1,0 +1,26 @@
+<h1>Conversions</h1>
+
+<div id="conversions">
+<% @group.group_conversions.each do |group_conversion| %>
+  <p>
+    <strong>Name:</strong>
+    <%= group_conversion.conversion.name %>
+  </p>
+
+  <p>
+    <strong>Amount:</strong>
+    <%= group_conversion.conversion.amount %>
+  </p>
+<% end %>
+
+</div> 
+
+<%= link_to "New conversion", new_conversion_path %>
+
+
+<div>
+  <%= link_to "Edit this conversion", edit_conversion_path(@conversion) %> |
+  <%= link_to "Back to conversions", conversions_path %>
+
+  <%= button_to "Destroy this conversion", @conversion, method: :delete %>
+</div>

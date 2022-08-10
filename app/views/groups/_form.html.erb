@@ -1,0 +1,18 @@
+<%= form_with(model: group) do |form| %>
+  <% if group.errors.any? %>
+    <div style="color: red">
+        <% group.errors.each do |error| %>
+          <%= error.full_message %>
+        <% end %>
+    </div>
+  <% end %>
+  <div class="navbar">
+      <%= link_to "🢀", groups_path, class: 'back-link'%>
+      <p class='nav-text'>NEW CATEGORY</p>
+      <%= form.submit class: 'login-submit-btn' %>
+  </div>
+  <div class="login-fields">
+    <%= form.text_field :icon, placeholder: 'icon url e.g: https://images.com/pic.png', class: 'login-field' %>
+    <%= form.text_field :name, placeholder: 'Category name', class: 'login-field' %>
+  </div>
+<% end %>

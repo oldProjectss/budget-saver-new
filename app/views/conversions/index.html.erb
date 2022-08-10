@@ -1,0 +1,40 @@
+<div class="home-page">
+  <div class="navbar">
+      <%= link_to "🢀", '/', class: 'back-link'%>
+      <p class='nav-text'>DETAILS</p>
+      <div></div>
+  </div>
+  <div class="details">
+    <div class="detail">
+      <div id="<%= dom_id @group %>" class="category-unit">
+        <div class="category-details">
+          <img src=<%= @group.icon %>" alt="<%= @group.name %>" />
+          <%= link_to @group.name, group_path(@group), class: 'category-name' %>
+        </div>
+        <p class="total-price">Total Transactions: $<%= @group.total_conversions %></p>
+      </div>
+    </div>
+    <% @group.group_conversions.each do |group_conversion| %>
+    <div class="category">
+      <div class="category-unit">
+        <div>
+          <h4>Transaction N: <%= group_conversion.conversion.id %></h4>
+          <p><%= group_conversion.conversion.name %></p>
+        </div>
+        <p class="total-price">$<%= group_conversion.conversion.amount %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div>
+    <%= form_with(model: GroupConversion.new, url: group_group_conversions_path(@group), method: :post) do |f| %>
+      <div class="form-transaction">
+        <div class="form-transaction-option"><%= f.collection_select :conversion_id,  @conversions, :id, :name %></div>
+        <div><%= f.submit 'Add transaction to this group', class: 'form-transaction-btn' %></div>
+      </div>
+    <% end %>
+    <div class="add-btn-container">
+      <%= button_to "Add a new transaction", new_group_conversion_path(@group), class: 'add-btn', method: :get %>
+    </div>
+</div>
+

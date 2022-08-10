@@ -1,0 +1,14 @@
+<div class='login-page'>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="navbar">
+  <%= link_to "🢀", '/', class: 'back-link'%>
+  <p class='nav-text'>LOGIN</p>
+  <%= f.submit 'Log in', class: 'login-submit-btn'%>
+</div>
+  <div class="login-fields">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: 'login-field' %>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password', class: 'login-field' %>
+    <%= link_to "Forgot your password?", new_password_path(resource_name), class: 'login-link' %>
+  </div>
+<% end %>
+</div>

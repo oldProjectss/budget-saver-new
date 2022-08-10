@@ -1,0 +1,7 @@
+<div class="spalsh">
+  <img class="splash-img" src="splash.png" width="400px"/>
+  <div class="spalsh-btns">
+    <%= button_to "LOG IN", new_session_path(@user), method: :get, class: 'login-btn' %>
+    <%= button_to "SIGN UP", new_registration_path(@user), method: :get, class: 'signup-btn' %>
+  </div>
+</div>
