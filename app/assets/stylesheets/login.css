@@ -68,3 +68,29 @@
   width: 100%;
   cursor: pointer;
 }
+
+.edit-user-btn,
+.remove-user-btn {
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(62, 62, 62, 0.6);
+}
+
+.all-groups-btn {
+  padding: 100px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(62, 62, 62, 0.6);
+  margin: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3e3e3e;
+  cursor: pointer;
+} /* width: 100px; */
+
+.remove-user-btn {
+  background-color: #ff0000;
+  color: #fff;
+}

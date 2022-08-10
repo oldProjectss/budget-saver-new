@@ -1,10 +1,12 @@
-<p style="color: green"><%= notice %></p>
+<div class="home-page">
+  <div class="navbar">
+      <%= link_to "🢀", :back, class: 'back-link'%>
+      <p class='nav-text'>User Setting</p>
+      <div><%= button_to "Sign out", destroy_user_session_path, method: :delete, class: 'user-btn' %></div>
+  </div>
 
 <%= render @user %>
-
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete %>
+<%= button_to "All groups", groups_path, class: 'all-groups-btn', method: :get %>
+<%= button_to "Edit this user", edit_user_path(@user), class: 'edit-user-btn', method: :get %>
+<%= button_to "Remove this user", @user, method: :delete, class: 'remove-user-btn' %>
 </div>
