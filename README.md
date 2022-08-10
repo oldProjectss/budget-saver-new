@@ -1,4 +1,4 @@
-# ROR-Recipe App
+# Budget save
 
 This app keps track of all your transctions
 
