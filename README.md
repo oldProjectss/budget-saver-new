@@ -12,6 +12,10 @@ This app keps track of all your transctions
 
 - [✨Budget Saver](https://budget-saver-app.herokuapp.com/)
 
+## Video presentation
+
+- [🎥](https://www.loom.com/share/06c8559233ea4b4c9da310ca678cd90d)
+
 ## Getting Started
 
 To start using this software you need to have Ruby installed in your machine
