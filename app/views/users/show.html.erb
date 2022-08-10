@@ -6,7 +6,11 @@
   </div>
 
 <%= render @user %>
-<%= button_to "All groups", groups_path, class: 'all-groups-btn', method: :get %>
-<%= button_to "Edit this user", edit_user_path(@user), class: 'edit-user-btn', method: :get %>
-<%= button_to "Remove this user", @user, method: :delete, class: 'remove-user-btn' %>
+<div class="user-btns">
+  <%= button_to "All groups", groups_path, class: 'all-groups-btn', method: :get %>
+  <div class="user-btns-re">
+    <%= button_to "Edit this user", edit_user_path(@user), class: 'edit-user-btn', method: :get %>
+    <%= button_to "Remove this user", @user, method: :delete, class: 'remove-user-btn' %>
+  </div>
+</div>
 </div>

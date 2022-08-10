@@ -78,6 +78,20 @@
   border: 1px solid rgba(62, 62, 62, 0.6);
 }
 
+.user-btns {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-btns-re {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .all-groups-btn {
   padding: 100px;
   border-radius: 5px;
@@ -93,4 +107,5 @@
 .remove-user-btn {
   background-color: #ff0000;
   color: #fff;
+  margin-left: 10px;
 }
