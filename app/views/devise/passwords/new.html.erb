@@ -1,0 +1,14 @@
+<div class="login-page">
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { "data-turbo": "false", method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="navbar">
+    <%= link_to "🢀", '/', class: 'back-link'%>
+    <p class='nav-text'>RESET PASSWORD</p>
+    <%= f.submit 'Next', class: 'login-submit-btn'%>
+  </div>
+  <div class="login-fields">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: 'login-field' %>
+    <%= f.submit "Send me reset password instructions", class: 'reset-link' %>
+  </div>
+<% end %>
+</div>

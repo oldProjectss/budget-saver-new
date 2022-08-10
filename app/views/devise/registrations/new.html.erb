@@ -1,0 +1,17 @@
+<div class="login-page">
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="navbar">
+    <%= link_to "🢀", '/', class: 'back-link'%>
+    <p class='nav-text'>REGISTER</p>
+    <%= f.submit 'Next', class: 'login-submit-btn'%>
+  </div>
+  <div class="login-fields">
+    <%= f.text_field :name, placeholder: 'Full name', class: 'login-field' %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: 'login-field' %>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password', class: 'login-field' %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm password', class: 'login-field' %>
+  </div>
+<% end %>
+</div>

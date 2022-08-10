@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  icon: MyString
+  name: MyString
+  User: one
+  conversion: one
+
+two:
+  icon: MyString
+  name: MyString
+  User: two
+  conversion: two

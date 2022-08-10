@@ -1,0 +1,7 @@
+<div id="<%= dom_id group %>" class="category-unit">
+    <div class="category-details">
+      <img src=<%= group.icon %>" alt="<%= group.name %>" />
+      <%= link_to group.name, group_path(group), class: 'category-name' %>
+    </div>
+    <p class="total-price">$<%= group.total_conversions %></p>
+</div>

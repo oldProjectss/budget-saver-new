@@ -1,0 +1,38 @@
+.spalsh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 99vh;
+  width: 100vw;
+}
+
+.spalsh-btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn,
+.signup-btn {
+  width: 90vw;
+  border: 1px #fff solid;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.login-btn {
+  background-color: #3778c2;
+  color: #fff;
+}
+
+.signup-btn {
+  background-color: #fff;
+  color: #434b54;
+}
