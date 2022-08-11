@@ -1,22 +1,46 @@
-# Budget save
+# Budget saver
+
+![](./public/splash.png)
 
 This app keps track of all your transctions
 
+## Table of Contents
+
+- [Built with](#built-with)
+- [Live app](#live-demo)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Contributing](#🤝-contributing)
+
 ## Built With
 
-- Ruby
-- Rails
-- Postgresql
+- [Ruby](https://www.ruby-lang.org/)
+- [Rails](https://rubygems.org/gems/rails)
+- [Postgresql](https://www.postgresql.org/)
 
 ## Live Demo
 
 - [✨Budget Saver](https://budget-saver-app.herokuapp.com/)
 
-## Video presentation
+<details>
+  <summary><h2>Screenshots</h2></summary>
+  <img src="./screenshots/screenshot1.png") />
+  <img src="./screenshots/screenshot2.png") />
+  <img src="./screenshots/screenshot3.png") />
+  <img src="./screenshots/screenshot4.png") />
+  <img src="./screenshots/screenshot5.png") />
+  <img src="./screenshots/screenshot6.png") />
+</details>
 
-- [🎥](https://www.loom.com/share/06c8559233ea4b4c9da310ca678cd90d)
+## Prerequisites
 
-## Getting Started
+For using the app you can use the Demo link above to see the app in action, no further prerequisites are needed.
+
+## Developments
+
+You should have `ruby on rails` and `postgresql` installed and running on your machine before you can start developing this app.
+
+### Getting Started
 
 To start using this software you need to have Ruby installed in your machine
 Then clone this repo:
@@ -53,15 +77,6 @@ To run rspec, in your terminal for testing the methods:
 -$ rspec
 ```
 
-### Prerequisites
-
-Ruby and rails installed on your local machine
-
-### Setup
-
-- Clone the GitHub Repository
-- Go to the Project Directory
-- Run `bundle install`
 
 ## Authors
 
