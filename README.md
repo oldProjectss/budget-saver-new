@@ -20,7 +20,7 @@ This app keps track of all your transctions
 
 ## Live Demo
 
-- [✨Budget Saver](https://budget-saver-app.herokuapp.com/)
+- [✨Budget Saver](https://budget-saver.fly.dev/)
 
 <details>
   <summary><h2>Screenshots</h2></summary>
